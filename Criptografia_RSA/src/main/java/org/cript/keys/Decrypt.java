@@ -21,7 +21,7 @@ public class Decrypt {
 
     public static void main(String[] args) {
 
-        List<String> destTextList = readTextFile(Encrypt.DEST_FILE);
+        List<String> destTextList = readTextFile(Encrypt.DEST_FILE_ENCRYPT);
 
         String base64 = "";
         for (String textLine : destTextList) {

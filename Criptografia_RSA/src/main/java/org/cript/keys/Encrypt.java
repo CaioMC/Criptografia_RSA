@@ -19,7 +19,7 @@ public class Encrypt {
 
     private static String TEXT_FILE = "src/main/resources/textFile/textFile.txt";
     public static String PUBLIC_KEY_FILE = "src/main/resources/publicKeyFile/publicKeyFile.txt";
-    public static String DEST_FILE = "src/main/resources/destTextFile/destTextFile.txt";
+    public static String DEST_FILE_ENCRYPT = "src/main/resources/destTextFileEncrypt/destTextFileEncrypt.txt";
     private static String PRIME_LIST_FILE = "src/main/resources/primeList/primeList.txt";
 
     public static void main(String[] args) {
@@ -51,7 +51,7 @@ public class Encrypt {
     private static void writeTextFile(List<BigInteger> bigIntegerList) {
 
         try {
-            BufferedWriter bw = new BufferedWriter(new FileWriter(new File(DEST_FILE)));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(new File(DEST_FILE_ENCRYPT)));
             for (BigInteger B : bigIntegerList) {
                 bw.write(B + "\n");
             }
